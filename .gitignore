@@ -1,0 +1,27 @@
+# Secrets
+.env
+.env.*
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Generated API and processed data
+data/raw/
+data/processed/
+
+# Power BI temporary files
+*.tmp
