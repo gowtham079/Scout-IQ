@@ -19,9 +19,6 @@ __pycache__/
 *.tmp
 *.log
 
-# Generated API and processed data
+# Generated data
 data/raw/
 data/processed/
-
-# Power BI temporary files
-*.tmp
