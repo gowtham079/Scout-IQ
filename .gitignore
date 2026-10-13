@@ -1,6 +1,7 @@
 # Secrets
 .env
 .env.*
+!.env.example
 
 # Python environments
 .venv/
@@ -11,9 +12,27 @@ env/
 __pycache__/
 *.py[cod]
 
+# Node / Frontend build & dependencies
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
 # IDE settings
 .vscode/
 .idea/
+
+# Local agent & IDE workflows
+.agent/
+.agents/
+.gemini/
+.gsd/
+/GSD-STYLE.md
+/PROJECT_RULES.md
+/VERSION
+/model_capabilities.yaml
+/adapters/
+/scripts/
 
 # Temporary files
 *.tmp

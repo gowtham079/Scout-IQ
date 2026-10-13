@@ -1,0 +1,293 @@
+/* ==========================================================================
+   ScoutIQ — Football Analytics & Recruitment Platform
+   Retro-Pixel Inspired Design System & Tokens
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --color-bg-base: #0a0f1d;
+  --color-bg-surface: #0f172a;
+  --color-bg-surface-elevated: #151e38;
+  --color-bg-card: #10192f;
+  --color-bg-highlight: #1b2647;
+
+  /* Accent Colors */
+  --color-primary: #facc15;       /* Bright Retro Yellow */
+  --color-primary-hover: #fde047;
+  --color-secondary: #06b6d4;     /* Electric Blue / Cyan */
+  --color-secondary-hover: #22d3ee;
+  --color-pitch: #10b981;         /* Pitch Green */
+  --color-danger: #ef4444;        /* Crimson */
+  --color-warning: #f97316;       /* Amber */
+
+  /* Borders & Dividers */
+  --border-color-subtle: #1e293b;
+  --border-color-pixel: #334155;
+  --border-color-glow: rgba(6, 182, 212, 0.3);
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #0a0f1d;
+
+  /* Typography Families */
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Sizing & Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+
+  /* Shadow & Glow */
+  --shadow-pixel: 3px 3px 0px 0px rgba(0, 0, 0, 0.6);
+  --shadow-pixel-accent: 3px 3px 0px 0px var(--color-primary);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Subtle Retro Grid Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Helpers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.pixel-title {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+/* Retro Pixel Badges & Buttons */
+.pixel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 4px 8px;
+  border: 1px solid var(--border-color-pixel);
+  background: var(--color-bg-surface-elevated);
+  color: var(--color-primary);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  padding: 10px 16px;
+  background: var(--color-primary);
+  color: var(--text-inverse);
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.8);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  text-decoration: none;
+}
+
+.pixel-btn:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.9);
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.9);
+}
+
+.pixel-btn-outline {
+  background: transparent;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-secondary);
+}
+
+.pixel-btn-outline:hover {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--color-secondary-hover);
+  border-color: var(--color-secondary-hover);
+}
+
+/* Card Containers */
+.pixel-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--border-color-pixel);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+  position: relative;
+}
+
+.pixel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  opacity: 0.8;
+}
+
+/* Status Indicator Dot */
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-dot.online {
+  background-color: var(--color-pitch);
+  box-shadow: 0 0 6px var(--color-pitch);
+}
+
+.status-dot.offline {
+  background-color: var(--color-danger);
+  box-shadow: 0 0 6px var(--color-danger);
+}
+
+.status-dot.checking {
+  background-color: var(--color-warning);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+/* Layout Utilities */
+.app-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+/* Navigation Links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: var(--color-bg-surface-elevated);
+}
+
+.nav-link.active {
+  color: var(--color-primary);
+  background: rgba(250, 204, 21, 0.08);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Tables */
+.pixel-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-color-pixel);
+  background: var(--color-bg-card);
+}
+
+.pixel-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.pixel-table th {
+  background: var(--color-bg-surface);
+  color: var(--color-secondary);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 12px 16px;
+  border-bottom: 2px solid var(--border-color-pixel);
+  text-transform: uppercase;
+}
+
+.pixel-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color-subtle);
+  color: var(--text-primary);
+}
+
+.pixel-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color-pixel);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}

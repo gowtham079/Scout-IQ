@@ -1,359 +1,365 @@
-# ⚽ ScoutIQ — Football Analytics & Recruitment Intelligence
+# ⚽ ScoutIQ — Football Intelligence & Recruitment Platform
 
-**An end-to-end football analytics platform for player scouting, performance analysis, and data-driven recruitment.**
+**An end-to-end full-stack football analytics and scouting platform for player recruitment, performance benchmarking, and team intelligence.**
 
-ScoutIQ transforms football match data into actionable insights using Python, SQL, MySQL, and Power BI. It combines data ingestion, transformation, database management, analytical SQL views, and interactive dashboards to explore player performance and team statistics.
+ScoutIQ transforms raw football match data into high-resolution scouting insights. It pairs an automated Python ETL pipeline and MySQL database with an asynchronous **FastAPI REST API**, a high-performance **React + Vite single-page application**, and analytical **Power BI dashboards**.
 
 ---
 
 ## 📌 Project Overview
 
-Football recruitment requires more than comparing goals and assists. Scouts need to evaluate player contributions, playing time, passing efficiency, defensive actions, and team performance.
+Recruitment in modern football requires evaluating multi-dimensional contributions beyond raw goal counts. Scouts and analysts require access to playing-time context, per-90 normalized statistics, shooting and passing efficiency, defensive duel rates, and squad performance profiles.
 
-ScoutIQ addresses this challenge by building a data pipeline that collects football data through the Sportmonks Football API, stores structured data in MySQL, calculates analytical metrics using SQL, and presents insights through Power BI dashboards.
+ScoutIQ addresses this by integrating football data ingestion via the Sportmonks Football API, normalized relational storage in MySQL, analytical SQL views, a high-performance REST API, and two distinct presentation layers:
+1. **Interactive Full-Stack Web Application:** Powered by FastAPI, React 19, Recharts, and a responsive Retro-Pixel design system.
+2. **Business Intelligence Suite:** Interactive Power BI dashboards connected directly to MySQL analytical views.
 
-### Project Scope
-
+### Project Scope & Dataset
 - **Competition:** Danish Superliga
 - **Season:** 2025/2026
-- **Matches processed:** 192
-- **Teams:** 12
-- **Players:** 412 unique players
-- **Player match statistics:** Approximately 154,739 records
-- **Statistic types:** 69
-
-*Figures reflect the collected dataset and project validation results.*
+- **Matches processed:** 192 matches
+- **Teams:** 12 clubs
+- **Unique Players:** 412 unique players
+- **Player match statistics:** 154,739 records across 69 distinct statistical types
 
 ---
 
-## 🎯 Project Objectives
+## 🎯 Key Application Features
 
-- Build an end-to-end football data analytics pipeline.
-- Automate football data collection through a REST API.
-- Clean, transform, and organize data for analysis.
-- Store relational football data in MySQL.
-- Develop reusable SQL views for player and team performance.
-- Calculate player performance metrics, including per-90 statistics.
-- Build interactive Power BI dashboards for scouting and performance analysis.
+### 1. 📊 Executive Overview Dashboard
+- Executive season-level KPIs: Total unique players, active clubs, total goals, total assists, and league-wide average player rating.
+- Dynamic Recharts visualizations for top goalscorers, top assist creators, and club goal differential (goals scored vs. conceded).
+- Real-time API & database connectivity badge.
+
+### 2. 🔍 Player Directory & Comprehensive Profiles
+- Paginated player database with real-time text search, club filtering, minimum minutes played threshold, and minimum rating sliders.
+- Multi-column sorting by rating, minutes played, goals per 90, and assists per 90.
+- Deep-dive player profile modal/pages displaying:
+  - Season counting stats (appearances, minutes, goals, assists, shots, tackles, interceptions).
+  - Tactical percentages (shooting accuracy, pass completion %, tackle win %, aerial duel %).
+  - Normalized per-90 offensive and defensive radar/bar metrics.
+
+### 3. ⚔️ Head-to-Head Player Comparison
+- Dual searchable player selectors with duplicate prevention.
+- Side-by-side metric matrix displaying minutes, appearances, ratings, and normalized per-90 indicators.
+- Automatic categorical leader calculation highlighting superior performance across offensive, playmaking, and defensive attributes.
+
+### 4. 🛡️ Team Standings & Club Analytics
+- Official Danish Superliga aggregated standings (position, matches played, wins, draws, losses, goals for/against, goal difference, points, and average possession).
+- Club-specific squad rosters with squad size, squad average match rating, and team top performers.
+
+### 5. 🏆 Scouting Rankings
+- Specialized ranking leaderboards filtered by eligible playing-time thresholds across four analytical categories:
+  - **Clinical Finishers:** Ranked by goals scored per 90 minutes.
+  - **Creative Playmakers:** Ranked by combined shot-creation actions (key passes + assists per 90).
+  - **Defensive Disruptors:** Ranked by combined ball-winning actions (tackles + interceptions per 90).
+  - **Elite Consistency:** Highest average match rating (minimum 900 minutes played).
+
+### 6. ⭐ Recruitment Shortlist (Browser Persisted)
+- Bookmark any player into a dedicated recruitment shortlist with one click.
+- Stored reliably in browser `localStorage` across user sessions.
+- Summary analytics bar showing shortlist size, average shortlisted player rating, and total minutes.
+- Quick player profile inspection and instant candidate removal.
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph Data Pipeline
+        SM[Sportmonks Football API v3] --> Ingest[Python Ingestion Scripts]
+        Ingest --> Clean[Data Cleaning & Transformation]
+        Clean --> MySQL[(MySQL 8.0 Database)]
+        MySQL --> SQLViews[SQL Analytical Views]
+    end
+
+    subgraph Backend API
+        SQLViews --> FastAPIPool[Connection Pool & Services]
+        FastAPIPool --> FastAPI[FastAPI REST API :8000]
+        FastAPI --> Endpoints["Routers: /overview, /players, /teams, /scouting"]
+    end
+
+    subgraph Frontend Application
+        Endpoints --> ViteProxy[Vite Dev Proxy / Configurable Base URL]
+        ViteProxy --> ReactApp[React 19 + Vite SPA :5173]
+        ReactApp --> LocalStore[(Browser LocalStorage - Shortlists)]
+    end
+
+    subgraph Business Intelligence
+        SQLViews --> PowerBI[Power BI Desktop Dashboards]
+    end
+```
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology | Purpose |
-|---|---|
-| Python | Data ingestion, transformation, and pipeline automation |
-| Pandas & NumPy | Data analysis and manipulation |
-| Sportmonks Football API | Football match, player, team, and statistical data |
-| MySQL | Relational database and data storage |
-| SQL | Analytical queries, metrics, and validation |
-| Power BI | Interactive dashboards and visual analytics |
-| Git & GitHub | Version control and project management |
+| Layer | Technologies | Purpose |
+|---|---|---|
+| **Frontend** | React 19, Vite 8, Recharts, Lucide Icons, CSS3 | Single-Page Application, interactive charts, retro-pixel design |
+| **Backend API** | FastAPI 0.110+, Uvicorn, Pydantic v2 | High-performance asynchronous RESTful API & data validation |
+| **Database** | MySQL Server 8.0, `mysql-connector-python` | Relational storage, connection pooling, analytical views |
+| **Data Pipeline** | Python 3.10+, Requests, python-dotenv | Sportmonks API ingestion, cleansing, and automated loading |
+| **Business Intelligence** | Microsoft Power BI Desktop, DAX | Multi-page executive and scouting dashboards (`.pbix`) |
+| **Testing & Quality** | Python Requests, Oxlint, Vite Build | Integration test suite, static linting, production bundling |
 
 ---
 
-## 🏗️ Data Pipeline Architecture
+## 📋 Prerequisites
 
-```text
-Sportmonks Football API
-          |
-          v
-Python Data Ingestion
-          |
-          v
-Raw JSON Data
-          |
-          v
-Data Cleaning & Transformation
-          |
-          v
-MySQL Database
-          |
-          v
-SQL Analytical Views
-          |
-          v
-Power BI Dashboards
-          |
-          v
-Player Scouting & Team Performance Insights
-```
-
-### Pipeline Stages
-
-**1. Data Ingestion**
-
-Collected football data from the Sportmonks Football API using Python and HTTP requests.
-
-**2. Data Transformation**
-
-Processed and cleaned football data to prepare structured records for database loading and analysis.
-
-**3. Database Loading**
-
-Designed a relational MySQL database to store competitions, seasons, teams, fixtures, players, lineups, match events, and statistical records.
-
-**4. SQL Analytics**
-
-Created analytical views to summarize player match performance, season statistics, per-90 metrics, team performance, and scouting features.
-
-**5. Data Visualization**
-
-Connected the MySQL analytical views to Power BI to develop interactive dashboards for exploring player and team performance.
+Before running ScoutIQ locally, ensure you have the following installed:
+- **Python:** Version `3.10` or higher (verified on Python 3.13)
+- **Node.js:** Version `18.0.0` or higher (with `npm`)
+- **MySQL Server:** Version `8.0` or higher
+- **Power BI Desktop:** (Optional) To view and edit `ScoutIQ_Football_Analytics.pbix`
 
 ---
 
-## 📊 Power BI Dashboards
+## 🚀 Local Setup & Installation
 
-ScoutIQ includes three dashboard pages.
+### Option A: One-Command Launch (Windows)
 
-### 1. ScoutIQ Overview
+ScoutIQ includes automated launcher scripts that verify dependencies, activate `.venv`, install missing frontend packages, launch both servers in dedicated consoles, and open the web browser:
 
-Provides a high-level summary of player and team performance.
-
-**Key insights:**
-- Total goals and assists
-- Number of players analyzed
-- Average player rating
-- Top players by goals per 90 minutes
-- Goals scored versus goals conceded by team
-
-### 2. Player Scouting
-
-Enables comparison of player performance using statistical indicators.
-
-**Metrics include:**
-- Minutes played
-- Player ratings
-- Goals and assists per 90 minutes
-- Passes per 90 minutes
-- Pass accuracy
-- Tackles per 90 minutes
-- Duel-win percentage
-
-Player and playing-time filters support more focused comparisons.
-
-### 3. Team Performance
-
-Analyzes team-level performance across the competition.
-
-**Metrics include:**
-- Goals scored and conceded
-- Wins, draws, and losses
-- Goal difference
-- Average possession
-- League standings and points
-
----
-
-## 🖼️ Dashboard Screenshots
-
-Screenshots are available in the [`Dashboard Images`](./Dashboard%20Images/) folder.
-
-### ScoutIQ Overview
-
-![ScoutIQ Overview](./Dashboard%20Images/Screenshot%202026-10-11%20130426.png)
-
-### Player Scouting
-
-![Player Scouting](./Dashboard%20Images/Screenshot%202026-10-11%20130502.png)
-
-### Team Performance
-
-![Team Performance](./Dashboard%20Images/Screenshot%202026-10-11%20130517.png)
-
----
-
-## 🗄️ Database & SQL Analytics
-
-The project uses MySQL to store and organize football data in relational tables.
-
-### Core Data Entities
-
-- Competitions and seasons
-- Teams and team-season participation
-- Fixtures and fixture scores
-- Players and lineups
-- Player match statistics
-- Match events
-- Team match statistics
-- Statistical type definitions
-
-### Analytical SQL Views
-
-| SQL File | Purpose |
-|---|---|
-| `01_player_match_summary.sql` | Player performance at match level |
-| `02_player_season_performance.sql` | Aggregated player-season performance |
-| `03_player_per90_metrics.sql` | Normalized performance metrics |
-| `04_team_season_performance.sql` | Team-season performance analysis |
-| `05_player_scouting_features.sql` | Features for player comparison and scouting |
-| `06_analytics_validation.sql` | Data-quality validation checks |
-
-Additional named views provide player and team names for Power BI reporting.
-
----
-
-## ✅ Data Quality & Validation
-
-Validation checks were implemented to improve analytical reliability.
-
-Checks include:
-
-- Duplicate player-season records
-- Negative playing-time values
-- Impossible percentage values
-- Missing player or fixture references
-- Missing team references in team statistics
-- Duplicate scouting-feature records
-- Fixtures without associated player data
-
-The validation results were used to identify data-quality issues before analysis.
-
----
-
-## 📁 Project Structure
-
-```text
-ScoutIQ/
-│
-├── Dashboard Images/
-│   └── Power BI dashboard screenshots
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── docs/
-│   ├── analytics_dictionary.md
-│   ├── data_dictionary.md
-│   ├── database_schema.md
-│   ├── player_data_profile.md
-│   └── raw_data_profile.md
-│
-├── sql/
-│   └── analytics/
-│       ├── 01_player_match_summary.sql
-│       ├── 02_player_season_performance.sql
-│       ├── 03_player_per90_metrics.sql
-│       ├── 04_team_season_performance.sql
-│       ├── 05_player_scouting_features.sql
-│       └── 06_analytics_validation.sql
-│
-├── src/
-│   ├── analytics/
-│   ├── api/
-│   ├── config/
-│   ├── database/
-│   ├── ingestion/
-│   ├── loaders/
-│   └── transformation/
-│
-├── ScoutIQ_Football_Analytics.pbix
-├── test_api.py
-├── test_mysql.py
-├── .gitignore
-└── README.md
+```powershell
+# In PowerShell:
+.\run.ps1
+# or
+.\run.bat
 ```
 
 ---
 
-## 🚀 Getting Started
+### Option B: Step-by-Step Manual Setup
 
-### Prerequisites
-
-Install the following:
-
-- Python
-- MySQL Server
-- Power BI Desktop
-- A Sportmonks Football API account and suitable API access
-
-### 1. Clone the Repository
-
+#### 1. Clone the Repository
 ```bash
 git clone https://github.com/gowtham079/Scout-IQ.git
 cd Scout-IQ
 ```
 
-### 2. Create a Virtual Environment
-
+#### 2. Configure Python Virtual Environment & Dependencies
 ```bash
+# Create virtual environment
 python -m venv .venv
-```
 
-Activate it on Windows PowerShell:
-
-```powershell
+# Activate virtual environment
+# Windows (PowerShell):
 .\.venv\Scripts\Activate.ps1
-```
+# Windows (CMD):
+.\.venv\Scripts\activate.bat
+# Linux / macOS:
+source .venv/bin/activate
 
-### 3. Install Dependencies
-
-Install the Python packages required by the project. If a `requirements.txt` file is added to the repository, use:
-
-```bash
+# Install backend and pipeline dependencies
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
+#### 3. Configure Environment Variables
+Copy the template configuration file to `.env`:
+```bash
+# Windows:
+copy .env.example .env
+# Linux / macOS:
+cp .env.example .env
+```
+Open `.env` and configure your local MySQL database credentials:
+```ini
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=3306
+MYSQL_USER=your_mysql_username
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DATABASE=scoutiq
+CORS_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:3000,http://127.0.0.1:5173
+```
 
-Create a local `.env` file and configure the API token and database connection settings required by the project.
+#### 4. Initialize Database & Views
+Ensure your MySQL server is running and the database tables and analytical views are created:
+```bash
+# Verify connection
+python test_mysql.py
 
-**Never commit your `.env` file, API tokens, or database passwords to GitHub.**
+# Rebuild analytical views if needed
+python src/analytics/build_views.py
+```
 
-### 5. Configure MySQL
+#### 5. Start the FastAPI Backend
+```bash
+uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
+```
+The REST API will be available at `http://127.0.0.1:8000`.
 
-Create the `scoutiq` database, configure your local database connection, and prepare the required tables before running the ingestion and loading scripts.
+#### 6. Start the React Frontend
+In a new terminal window:
+```bash
+cd frontend
+npm install
+npm run dev
+```
+The frontend interface will open at `http://localhost:5173`.
 
-Refer to the database schema documentation in `docs/`.
-
-### 6. Run the Pipeline
-
-Run the ingestion, transformation, and loading scripts according to their configuration and dependencies.
-
-The `src/` directory contains the project pipeline code.
-
-### 7. Open the Power BI Dashboard
-
-Open `ScoutIQ_Football_Analytics.pbix` in Power BI Desktop and configure the MySQL connection for your local environment.
-
-**Note:** The generated JSON datasets are excluded from version control. Recreate the required data using the ingestion pipeline and your available API access.
+> **Note on Frontend API Routing:** During local development, `frontend/vite.config.js` proxies all requests to `/api` directly to `http://127.0.0.1:8000`. In production, the client supports configuring `VITE_API_BASE_URL` to target any hosted API domain.
 
 ---
 
-## 📚 Documentation
+## 📡 REST API Documentation
 
-Additional technical documentation is available in the [`docs`](./docs/) directory.
+FastAPI automatically generates interactive OpenAPI documentation. With the backend running, visit:
+- **Swagger UI:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
-- **Data Dictionary:** Definitions of data fields and their meanings.
-- **Database Schema:** Database tables and relationships.
-- **Player Data Profile:** Overview of player data and its characteristics.
-- **Raw Data Profile:** Profiling of the collected source data.
-- **Analytics Dictionary:** Definitions of analytical metrics and views.
+### Implemented Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/api/health` | Health check verifying API status and MySQL connection pool health. |
+| `GET` | `/api/overview` | Executive KPIs, season goal totals, top scorers/assisters, and goal distributions. |
+| `GET` | `/api/players` | Filterable player scouting directory with pagination, search, and sorting. |
+| `GET` | `/api/players/{player_id}` | Detailed player profile, season totals, percentages, and per-90 metrics. |
+| `GET` | `/api/teams` | League standings with points, goal differential, and possession rates. |
+| `GET` | `/api/teams/{team_id}` | Club squad breakdown, average squad rating, and squad statistical leaders. |
+| `GET` | `/api/scouting/compare` | Head-to-head comparison of two players across per-90 stats with winner flags. |
+| `GET` | `/api/scouting/top-performers` | Ranked leaderboards across 4 distinct scouting categories. |
 
 ---
 
-## 🔍 Limitations
+## ⚙️ Environment Variables Reference
 
-- The current analysis covers one competition and one season.
-- Data availability depends on the Sportmonks API subscription and the statistics provided by the source.
-- Expected goals (xG) analysis is not included because the required API access was unavailable.
-- Player comparisons should account for playing time, role, and team context.
-- The project is an analytical portfolio application, not a production recruitment system.
+| Variable | Applicable Layer | Description | Default / Example |
+|---|---|---|---|
+| `MYSQL_HOST` | Backend & ETL | MySQL server hostname or IP address | `127.0.0.1` |
+| `MYSQL_PORT` | Backend & ETL | MySQL server listening port | `3306` |
+| `MYSQL_USER` | Backend & ETL | Database user account | `root` or `scoutiq_user` |
+| `MYSQL_PASSWORD` | Backend & ETL | Database user password | *User configured* |
+| `MYSQL_DATABASE` | Backend & ETL | Target database schema name | `scoutiq` |
+| `CORS_ORIGINS` | Backend API | Comma-separated list of allowed frontend origins | `http://localhost:5173,...` |
+| `SPORTMONKS_API_TOKEN` | Ingestion Pipeline | API key for Sportmonks v3 (only for data ingestion) | `your_token_here` |
+| `VITE_API_BASE_URL` | Frontend Build | Optional backend URL for separate hosting | `/api` |
+
+---
+
+## 🧪 Testing & Production Build
+
+### Run Backend Integration Tests
+Execute the automated integration test suite against the running API:
+```bash
+python tests/test_api_suite.py
+```
+This suite verifies database connectivity, schema responses, pagination boundaries, and scouting endpoints.
+
+### Frontend Production Build & Linting
+Validate the frontend code and produce the optimized static bundle:
+```bash
+cd frontend
+# Run static analysis
+npm run lint
+
+# Build production bundle
+npm run build
+```
+The compiled assets will be output to `frontend/dist/`.
+
+### Production Deployment Architecture
+ScoutIQ is architected for decoupled cloud deployment:
+1. **Database:** Hosted on any managed MySQL service (e.g., AWS RDS, PlanetScale, DigitalOcean).
+2. **Backend:** Deployed to any ASGI/PaaS host (Render, Railway, Heroku) using the root `Procfile`:
+   ```ini
+   web: uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8000}
+   ```
+3. **Frontend:** Deployed as a static SPA (Vercel, Netlify, Cloudflare Pages) with `VITE_API_BASE_URL` pointed to the hosted backend domain.
+
+---
+
+## 📊 Power BI Dashboards
+
+In addition to the web application, ScoutIQ includes an enterprise Power BI report (`ScoutIQ_Football_Analytics.pbix`) connected directly to MySQL views.
+
+### Dashboard Pages
+1. **ScoutIQ Overview:** Executive summaries, league goals, assists, player ratings, and goal distribution charts.
+2. **Player Scouting:** Scatter plots, playing-time filters, passing accuracy, duel-win rates, and per-90 metrics.
+3. **Team Performance:** Points table, goals scored/conceded, home/away splits, and possession analysis.
+
+### Dashboard Screenshots
+Screenshots are archived in the [`Dashboard Images`](./Dashboard%20Images/) directory:
+
+- **Overview:**
+  ![ScoutIQ Overview](./Dashboard%20Images/Screenshot%202026-10-11%20130426.png)
+- **Player Scouting:**
+  ![Player Scouting](./Dashboard%20Images/Screenshot%202026-10-11%20130502.png)
+- **Team Performance:**
+  ![Team Performance](./Dashboard%20Images/Screenshot%202026-10-11%20130517.png)
+
+---
+
+## 🗄️ Database Schema & Analytical Views
+
+ScoutIQ stores normalized football data structured across fixtures, teams, players, lineups, and match events. Reusable SQL analytical views calculate metrics dynamically:
+
+| SQL File | View Name | Purpose |
+|---|---|---|
+| `01_player_match_summary.sql` | `vw_player_match_summary` | Match-by-match player statistics and ratings |
+| `02_player_season_performance.sql` | `vw_player_season_performance` | Aggregated season totals (minutes, appearances, goals, assists) |
+| `03_player_per90_metrics.sql` | `vw_player_per90_metrics` | Normalized per-90 metrics (goals, assists, key passes, tackles) |
+| `04_team_season_performance.sql` | `vw_team_season_performance` | Club standings, points, goal differential, and possession |
+| `05_player_scouting_features.sql` | `vw_player_scouting_features` | Consolidated scouting profile with efficiency percentages |
+| `06_analytics_validation.sql` | *N/A (Script)* | Data quality checks (duplicate checks, negative values, anomalies) |
+
+---
+
+## 📁 Repository Structure
+
+```text
+ScoutIQ/
+├── backend/                        # FastAPI REST API Application
+│   └── app/
+│       ├── routers/                # API Endpoints (overview, players, teams, scouting)
+│       ├── schemas/                # Pydantic request and response schemas
+│       ├── services/               # SQL queries and business logic
+│       ├── database.py             # MySQL connection pooling and health checks
+│       └── main.py                 # FastAPI application factory and CORS middleware
+│
+├── frontend/                       # React 19 + Vite Single-Page Application
+│   ├── public/                     # Static assets (favicons, SVG icons)
+│   ├── src/
+│   │   ├── api/client.js           # Centralized API client with configurable base URL
+│   │   ├── components/             # Reusable UI components (Navbar, Layout, Spinner)
+│   │   ├── context/                # React Context (ShortlistContext with localStorage)
+│   │   ├── pages/                  # Route views (Overview, Players, Compare, Teams, Rankings, Shortlist)
+│   │   ├── index.css               # Retro-Pixel CSS design tokens and base styles
+│   │   └── main.jsx                # Application entry point
+│   ├── package.json                # Frontend dependencies and scripts
+│   └── vite.config.js              # Vite server and /api proxy configuration
+│
+├── sql/analytics/                  # Analytical SQL views and data validation scripts
+├── src/                            # Python data pipeline (ingestion, cleaning, transformation, loading)
+├── tests/                          # Automated backend integration test suite
+├── docs/                           # Technical documentation (schemas, data dictionaries, profiles)
+├── Dashboard Images/               # Power BI dashboard screenshots
+├── ScoutIQ_Football_Analytics.pbix # Power BI analytics workbook
+├── .env.example                    # Template environment variables
+├── .gitignore                      # Git exclusion rules
+├── Procfile                        # Production ASGI server startup command
+├── requirements.txt                # Python backend and pipeline dependencies
+├── run.bat / run.ps1 / start.bat   # Windows one-command application launchers
+├── test_api.py / test_mysql.py     # Database and API sanity verification scripts
+└── README.md                       # Master project documentation
+```
+
+---
+
+## 🔍 Limitations & Context
+
+- **Competition Scope:** The current dataset covers the 2025/2026 Danish Superliga season.
+- **Data Source:** Statistics reflect data provided by the Sportmonks Football API v3.
+- **Expected Goals (xG):** Advanced shot-level xG models were unavailable under the basic API subscription tier.
+- **Contextual Scouting:** Player comparisons should account for tactical team system, role variations, and game state.
 
 ---
 
 ## 👨‍💻 Author
 
 **Gowtham S**
+MCA Student | Aspiring Data Analyst & Full-Stack Developer
 
-MCA Student | Aspiring Data Analyst
-
-**Skills demonstrated:** Python, SQL, MySQL, REST APIs, ETL Pipelines, Data Cleaning, Data Modeling, Data Validation, Power BI, and Data Visualization.
-
----
-
-## ⭐ Project Goal
-
-ScoutIQ demonstrates how football data can be transformed into structured analytical insights to support player evaluation, team performance analysis, and data-driven scouting decisions.
+**Core Skills Demonstrated:** Full-Stack Development (FastAPI, React 19, Vite), SQL Analytics, Database Modeling (MySQL), REST API Architecture, ETL Pipelines, Data Cleansing, Data Visualization (Recharts, Power BI).
