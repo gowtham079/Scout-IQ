@@ -1,0 +1,298 @@
+{
+  "season_id": 25536,
+  "total_unique_players": 412,
+  "total_teams": 12,
+  "total_goals": 595,
+  "total_assists": 409,
+  "average_player_rating": 6.76,
+  "top_scorers": [
+    {
+      "player_id": 37597771,
+      "player_name": "Franculino Gluda Djú",
+      "team_name": "FC Midtjylland",
+      "appearances": 21,
+      "minutes_played": 1343.0,
+      "goals": 17.0,
+      "assists": 3.0,
+      "average_rating": 7.21
+    },
+    {
+      "player_id": 37561087,
+      "player_name": "Tonni Adamsen",
+      "team_name": "Silkeborg IF",
+      "appearances": 31,
+      "minutes_played": 2607.0,
+      "goals": 14.0,
+      "assists": 7.0,
+      "average_rating": 7.27
+    },
+    {
+      "player_id": 26867,
+      "player_name": "Jordan Larsson",
+      "team_name": "FC København",
+      "appearances": 32,
+      "minutes_played": 2292.0,
+      "goals": 13.0,
+      "assists": 8.0,
+      "average_rating": 7.2
+    },
+    {
+      "player_id": 13980925,
+      "player_name": "Tobias Bech Kristensen",
+      "team_name": "AGF",
+      "appearances": 32,
+      "minutes_played": 2713.0,
+      "goals": 12.0,
+      "assists": 4.0,
+      "average_rating": 7.22
+    },
+    {
+      "player_id": 5967839,
+      "player_name": "Callum McCowatt",
+      "team_name": "Silkeborg IF",
+      "appearances": 32,
+      "minutes_played": 2511.0,
+      "goals": 11.0,
+      "assists": 5.0,
+      "average_rating": 7.26
+    },
+    {
+      "player_id": 27066734,
+      "player_name": "Noah Ganaus",
+      "team_name": "Odense BK",
+      "appearances": 32,
+      "minutes_played": 2609.0,
+      "goals": 11.0,
+      "assists": 4.0,
+      "average_rating": 6.96
+    },
+    {
+      "player_id": 2538544,
+      "player_name": "Jann-Fiete Arp",
+      "team_name": "Odense BK",
+      "appearances": 30,
+      "minutes_played": 2278.0,
+      "goals": 10.0,
+      "assists": 4.0,
+      "average_rating": 7.23
+    },
+    {
+      "player_id": 37266015,
+      "player_name": "Youssoufa Moukoko",
+      "team_name": "FC København",
+      "appearances": 24,
+      "minutes_played": 1206.0,
+      "goals": 9.0,
+      "assists": 2.0,
+      "average_rating": 6.95
+    },
+    {
+      "player_id": 24818229,
+      "player_name": "Doguhan Aral Simsir",
+      "team_name": "FC Midtjylland",
+      "appearances": 31,
+      "minutes_played": 2040.0,
+      "goals": 9.0,
+      "assists": 15.0,
+      "average_rating": 7.31
+    },
+    {
+      "player_id": 83665,
+      "player_name": "Patrick Mortensen",
+      "team_name": "AGF",
+      "appearances": 32,
+      "minutes_played": 2307.0,
+      "goals": 9.0,
+      "assists": 0.0,
+      "average_rating": 6.78
+    }
+  ],
+  "top_assisters": [
+    {
+      "player_id": 24818229,
+      "player_name": "Doguhan Aral Simsir",
+      "team_name": "FC Midtjylland",
+      "appearances": 31,
+      "minutes_played": 2040.0,
+      "assists": 15.0,
+      "goals": 9.0,
+      "average_rating": 7.31
+    },
+    {
+      "player_id": 150759,
+      "player_name": "Mohamed Elyounoussi",
+      "team_name": "FC København",
+      "appearances": 29,
+      "minutes_played": 2305.0,
+      "assists": 9.0,
+      "goals": 7.0,
+      "average_rating": 7.27
+    },
+    {
+      "player_id": 26867,
+      "player_name": "Jordan Larsson",
+      "team_name": "FC København",
+      "appearances": 32,
+      "minutes_played": 2292.0,
+      "assists": 8.0,
+      "goals": 13.0,
+      "average_rating": 7.2
+    },
+    {
+      "player_id": 37656066,
+      "player_name": "Thomas Jørgensen",
+      "team_name": "Viborg FF",
+      "appearances": 31,
+      "minutes_played": 2590.0,
+      "assists": 8.0,
+      "goals": 4.0,
+      "average_rating": 7.35
+    },
+    {
+      "player_id": 20694538,
+      "player_name": "Nicolai Vallys",
+      "team_name": "Brøndby IF",
+      "appearances": 30,
+      "minutes_played": 2492.0,
+      "assists": 7.0,
+      "goals": 7.0,
+      "average_rating": 7.11
+    },
+    {
+      "player_id": 37561087,
+      "player_name": "Tonni Adamsen",
+      "team_name": "Silkeborg IF",
+      "appearances": 31,
+      "minutes_played": 2607.0,
+      "assists": 7.0,
+      "goals": 14.0,
+      "average_rating": 7.27
+    },
+    {
+      "player_id": 37563833,
+      "player_name": "Dario Esteban Osorio Osorio",
+      "team_name": "FC Midtjylland",
+      "appearances": 28,
+      "minutes_played": 1937.0,
+      "assists": 6.0,
+      "goals": 6.0,
+      "average_rating": 7.31
+    },
+    {
+      "player_id": 37762150,
+      "player_name": "Caleb Marfo Yirenkyi",
+      "team_name": "Nordsjælland",
+      "appearances": 30,
+      "minutes_played": 2614.0,
+      "assists": 6.0,
+      "goals": 2.0,
+      "average_rating": 7.09
+    },
+    {
+      "player_id": 37723662,
+      "player_name": "Olti Hyseni",
+      "team_name": "Sønderjyske Fodbold",
+      "appearances": 31,
+      "minutes_played": 1652.0,
+      "assists": 5.0,
+      "goals": 5.0,
+      "average_rating": 6.8
+    },
+    {
+      "player_id": 37625601,
+      "player_name": "Max Ejdum",
+      "team_name": "Odense BK",
+      "appearances": 26,
+      "minutes_played": 2059.0,
+      "assists": 5.0,
+      "goals": 1.0,
+      "average_rating": 7.01
+    }
+  ],
+  "team_goal_distribution": [
+    {
+      "team_id": 939,
+      "team_name": "FC Midtjylland",
+      "goals_for": 72,
+      "goals_against": 36,
+      "goal_difference": 36
+    },
+    {
+      "team_id": 85,
+      "team_name": "FC København",
+      "goals_for": 67,
+      "goals_against": 44,
+      "goal_difference": 23
+    },
+    {
+      "team_id": 2905,
+      "team_name": "AGF",
+      "goals_for": 62,
+      "goals_against": 32,
+      "goal_difference": 30
+    },
+    {
+      "team_id": 2394,
+      "team_name": "Nordsjælland",
+      "goals_for": 51,
+      "goals_against": 46,
+      "goal_difference": 5
+    },
+    {
+      "team_id": 1789,
+      "team_name": "Odense BK",
+      "goals_for": 51,
+      "goals_against": 60,
+      "goal_difference": -9
+    },
+    {
+      "team_id": 2447,
+      "team_name": "Viborg FF",
+      "goals_for": 49,
+      "goals_against": 51,
+      "goal_difference": -2
+    },
+    {
+      "team_id": 2933,
+      "team_name": "Fredericia",
+      "goals_for": 45,
+      "goals_against": 68,
+      "goal_difference": -23
+    },
+    {
+      "team_id": 390,
+      "team_name": "Sønderjyske Fodbold",
+      "goals_for": 44,
+      "goals_against": 49,
+      "goal_difference": -5
+    },
+    {
+      "team_id": 293,
+      "team_name": "Brøndby IF",
+      "goals_for": 44,
+      "goals_against": 35,
+      "goal_difference": 9
+    },
+    {
+      "team_id": 86,
+      "team_name": "Silkeborg IF",
+      "goals_for": 41,
+      "goals_against": 67,
+      "goal_difference": -26
+    },
+    {
+      "team_id": 7466,
+      "team_name": "Vejle Boldklub",
+      "goals_for": 36,
+      "goals_against": 60,
+      "goal_difference": -24
+    },
+    {
+      "team_id": 2356,
+      "team_name": "Randers FC",
+      "goals_for": 33,
+      "goals_against": 47,
+      "goal_difference": -14
+    }
+  ]
+}

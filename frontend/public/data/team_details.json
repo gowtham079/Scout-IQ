@@ -1,0 +1,1454 @@
+{
+  "2905": {
+    "team": {
+      "team_id": 2905,
+      "season_id": 25536,
+      "team_name": "AGF",
+      "rank": 1,
+      "matches": 32,
+      "wins": 19,
+      "draws": 10,
+      "losses": 3,
+      "goals_for": 62,
+      "goals_against": 32,
+      "goal_difference": 30,
+      "points": 67,
+      "average_possession": 53.56,
+      "corners": 176.0,
+      "yellowcards": 47.0,
+      "redcards": 0.0
+    },
+    "squad_size": 32,
+    "squad_average_rating": 6.83,
+    "top_scorers": [
+      {
+        "player_id": 13980925,
+        "player_name": "Tobias Bech Kristensen",
+        "appearances": 32,
+        "minutes_played": 2713,
+        "goals": 12,
+        "assists": 4,
+        "average_rating": 7.22
+      },
+      {
+        "player_id": 83665,
+        "player_name": "Patrick Mortensen",
+        "appearances": 32,
+        "minutes_played": 2307,
+        "goals": 9,
+        "assists": 0,
+        "average_rating": 6.78
+      },
+      {
+        "player_id": 37337584,
+        "player_name": "Kristian Fredrik Malt Arnstad",
+        "appearances": 31,
+        "minutes_played": 2617,
+        "goals": 9,
+        "assists": 4,
+        "average_rating": 7.24
+      },
+      {
+        "player_id": 32796892,
+        "player_name": "Rasmus Carstensen",
+        "appearances": 24,
+        "minutes_played": 1349,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 6.76
+      },
+      {
+        "player_id": 17526122,
+        "player_name": "Kevin Yakob",
+        "appearances": 26,
+        "minutes_played": 1441,
+        "goals": 4,
+        "assists": 2,
+        "average_rating": 6.88
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 21762796,
+        "player_name": "Sebastian Vinther Jørgensen",
+        "appearances": 27,
+        "minutes_played": 629,
+        "rating": 6.72,
+        "key_passes_per90": 2.29,
+        "assists_per90": 0.29,
+        "pass_accuracy_percentage": 84.34
+      },
+      {
+        "player_id": 289659,
+        "player_name": "Gift Links",
+        "appearances": 32,
+        "minutes_played": 2757,
+        "rating": 7.37,
+        "key_passes_per90": 2.02,
+        "assists_per90": 0.16,
+        "pass_accuracy_percentage": 84.17
+      },
+      {
+        "player_id": 37755718,
+        "player_name": "Frederik Emmery Søgaard",
+        "appearances": 24,
+        "minutes_played": 738,
+        "rating": 6.86,
+        "key_passes_per90": 1.95,
+        "assists_per90": 0.49,
+        "pass_accuracy_percentage": 80.58
+      },
+      {
+        "player_id": 192860,
+        "player_name": "Felix Beijmo",
+        "appearances": 32,
+        "minutes_played": 2788,
+        "rating": 7.21,
+        "key_passes_per90": 1.87,
+        "assists_per90": 0.16,
+        "pass_accuracy_percentage": 87.11
+      },
+      {
+        "player_id": 37337584,
+        "player_name": "Kristian Fredrik Malt Arnstad",
+        "appearances": 31,
+        "minutes_played": 2617,
+        "rating": 7.24,
+        "key_passes_per90": 1.51,
+        "assists_per90": 0.14,
+        "pass_accuracy_percentage": 83.45
+      }
+    ]
+  },
+  "939": {
+    "team": {
+      "team_id": 939,
+      "season_id": 25536,
+      "team_name": "FC Midtjylland",
+      "rank": 2,
+      "matches": 32,
+      "wins": 16,
+      "draws": 12,
+      "losses": 4,
+      "goals_for": 72,
+      "goals_against": 36,
+      "goal_difference": 36,
+      "points": 60,
+      "average_possession": 53.84,
+      "corners": 175.0,
+      "yellowcards": 74.0,
+      "redcards": 5.0
+    },
+    "squad_size": 32,
+    "squad_average_rating": 6.83,
+    "top_scorers": [
+      {
+        "player_id": 37597771,
+        "player_name": "Franculino Gluda Djú",
+        "appearances": 21,
+        "minutes_played": 1343,
+        "goals": 17,
+        "assists": 3,
+        "average_rating": 7.21
+      },
+      {
+        "player_id": 24818229,
+        "player_name": "Doguhan Aral Simsir",
+        "appearances": 31,
+        "minutes_played": 2040,
+        "goals": 9,
+        "assists": 15,
+        "average_rating": 7.31
+      },
+      {
+        "player_id": 37629799,
+        "player_name": "Valdemar Byskov Andreasen",
+        "appearances": 28,
+        "minutes_played": 1096,
+        "goals": 7,
+        "assists": 3,
+        "average_rating": 6.97
+      },
+      {
+        "player_id": 37563833,
+        "player_name": "Dario Esteban Osorio Osorio",
+        "appearances": 28,
+        "minutes_played": 1937,
+        "goals": 6,
+        "assists": 6,
+        "average_rating": 7.31
+      },
+      {
+        "player_id": 1548396,
+        "player_name": "José Francisco dos Santos Júnior",
+        "appearances": 21,
+        "minutes_played": 1136,
+        "goals": 5,
+        "assists": 3,
+        "average_rating": 6.92
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 24818229,
+        "player_name": "Doguhan Aral Simsir",
+        "appearances": 31,
+        "minutes_played": 2040,
+        "rating": 7.31,
+        "key_passes_per90": 3.22,
+        "assists_per90": 0.66,
+        "pass_accuracy_percentage": 77.9
+      },
+      {
+        "player_id": 37629799,
+        "player_name": "Valdemar Byskov Andreasen",
+        "appearances": 28,
+        "minutes_played": 1096,
+        "rating": 6.97,
+        "key_passes_per90": 2.38,
+        "assists_per90": 0.25,
+        "pass_accuracy_percentage": 83.04
+      },
+      {
+        "player_id": 37597536,
+        "player_name": "Mikel Johan Gogorza Krüger-Johnsen",
+        "appearances": 23,
+        "minutes_played": 808,
+        "rating": 6.77,
+        "key_passes_per90": 2.12,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 75.31
+      },
+      {
+        "player_id": 37563833,
+        "player_name": "Dario Esteban Osorio Osorio",
+        "appearances": 28,
+        "minutes_played": 1937,
+        "rating": 7.31,
+        "key_passes_per90": 1.58,
+        "assists_per90": 0.28,
+        "pass_accuracy_percentage": 81.31
+      },
+      {
+        "player_id": 4343,
+        "player_name": "Kevin Mbabu",
+        "appearances": 25,
+        "minutes_played": 1206,
+        "rating": 6.59,
+        "key_passes_per90": 1.42,
+        "assists_per90": 0.07,
+        "pass_accuracy_percentage": 80.67
+      }
+    ]
+  },
+  "85": {
+    "team": {
+      "team_id": 85,
+      "season_id": 25536,
+      "team_name": "FC København",
+      "rank": 3,
+      "matches": 32,
+      "wins": 15,
+      "draws": 6,
+      "losses": 11,
+      "goals_for": 67,
+      "goals_against": 44,
+      "goal_difference": 23,
+      "points": 51,
+      "average_possession": 54.63,
+      "corners": 181.0,
+      "yellowcards": 49.0,
+      "redcards": 2.0
+    },
+    "squad_size": 38,
+    "squad_average_rating": 6.83,
+    "top_scorers": [
+      {
+        "player_id": 26867,
+        "player_name": "Jordan Larsson",
+        "appearances": 32,
+        "minutes_played": 2292,
+        "goals": 13,
+        "assists": 8,
+        "average_rating": 7.2
+      },
+      {
+        "player_id": 37266015,
+        "player_name": "Youssoufa Moukoko",
+        "appearances": 24,
+        "minutes_played": 1206,
+        "goals": 9,
+        "assists": 2,
+        "average_rating": 6.95
+      },
+      {
+        "player_id": 150759,
+        "player_name": "Mohamed Elyounoussi",
+        "appearances": 29,
+        "minutes_played": 2305,
+        "goals": 7,
+        "assists": 9,
+        "average_rating": 7.27
+      },
+      {
+        "player_id": 172250,
+        "player_name": "Viktor Claesson",
+        "appearances": 29,
+        "minutes_played": 1260,
+        "goals": 6,
+        "assists": 1,
+        "average_rating": 6.76
+      },
+      {
+        "player_id": 37700158,
+        "player_name": "Robert Vinicius Rodrigues Silva",
+        "appearances": 24,
+        "minutes_played": 1244,
+        "goals": 4,
+        "assists": 2,
+        "average_rating": 6.71
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 3533801,
+        "player_name": "Magnus Mattsson",
+        "appearances": 6,
+        "minutes_played": 457,
+        "rating": 7.17,
+        "key_passes_per90": 2.56,
+        "assists_per90": 0.2,
+        "pass_accuracy_percentage": 88.69
+      },
+      {
+        "player_id": 26867,
+        "player_name": "Jordan Larsson",
+        "appearances": 32,
+        "minutes_played": 2292,
+        "rating": 7.2,
+        "key_passes_per90": 2.24,
+        "assists_per90": 0.31,
+        "pass_accuracy_percentage": 83.92
+      },
+      {
+        "player_id": 259454,
+        "player_name": "Marcos Johan López Lanfranco",
+        "appearances": 28,
+        "minutes_played": 2167,
+        "rating": 7.08,
+        "key_passes_per90": 2.16,
+        "assists_per90": 0.17,
+        "pass_accuracy_percentage": 86.53
+      },
+      {
+        "player_id": 150759,
+        "player_name": "Mohamed Elyounoussi",
+        "appearances": 29,
+        "minutes_played": 2305,
+        "rating": 7.27,
+        "key_passes_per90": 2.07,
+        "assists_per90": 0.35,
+        "pass_accuracy_percentage": 76.14
+      },
+      {
+        "player_id": 21413511,
+        "player_name": "Mohamed Elias Achouri",
+        "appearances": 20,
+        "minutes_played": 1304,
+        "rating": 6.88,
+        "key_passes_per90": 1.86,
+        "assists_per90": 0.21,
+        "pass_accuracy_percentage": 82.76
+      }
+    ]
+  },
+  "2394": {
+    "team": {
+      "team_id": 2394,
+      "season_id": 25536,
+      "team_name": "Nordsjælland",
+      "rank": 4,
+      "matches": 32,
+      "wins": 15,
+      "draws": 5,
+      "losses": 12,
+      "goals_for": 51,
+      "goals_against": 46,
+      "goal_difference": 5,
+      "points": 50,
+      "average_possession": 57.22,
+      "corners": 155.0,
+      "yellowcards": 58.0,
+      "redcards": 4.0
+    },
+    "squad_size": 40,
+    "squad_average_rating": 6.74,
+    "top_scorers": [
+      {
+        "player_id": 37921647,
+        "player_name": "Prince Amoako Junior",
+        "appearances": 31,
+        "minutes_played": 2370,
+        "goals": 8,
+        "assists": 5,
+        "average_rating": 6.9
+      },
+      {
+        "player_id": 477009,
+        "player_name": "Ola Solbakken",
+        "appearances": 17,
+        "minutes_played": 1171,
+        "goals": 6,
+        "assists": 1,
+        "average_rating": 7.05
+      },
+      {
+        "player_id": 24818234,
+        "player_name": "Alexander Lucas Lind Rasmussen",
+        "appearances": 18,
+        "minutes_played": 1316,
+        "goals": 6,
+        "assists": 3,
+        "average_rating": 6.87
+      },
+      {
+        "player_id": 37760197,
+        "player_name": "Levy Nene",
+        "appearances": 20,
+        "minutes_played": 455,
+        "goals": 5,
+        "assists": 2,
+        "average_rating": 6.81
+      },
+      {
+        "player_id": 37537567,
+        "player_name": "Runar Robinsønn Norheim",
+        "appearances": 25,
+        "minutes_played": 1408,
+        "goals": 5,
+        "assists": 2,
+        "average_rating": 6.75
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37724666,
+        "player_name": "Peter Villum Berthelsen",
+        "appearances": 21,
+        "minutes_played": 870,
+        "rating": 6.58,
+        "key_passes_per90": 1.76,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 83.88
+      },
+      {
+        "player_id": 84557,
+        "player_name": "Nicklas Røjkjær",
+        "appearances": 22,
+        "minutes_played": 1954,
+        "rating": 7.22,
+        "key_passes_per90": 1.7,
+        "assists_per90": 0.18,
+        "pass_accuracy_percentage": 91.42
+      },
+      {
+        "player_id": 37668633,
+        "player_name": "Lucas Høgsberg",
+        "appearances": 3,
+        "minutes_played": 270,
+        "rating": 7.08,
+        "key_passes_per90": 1.67,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 93.99
+      },
+      {
+        "player_id": 37760197,
+        "player_name": "Levy Nene",
+        "appearances": 20,
+        "minutes_played": 455,
+        "rating": 6.81,
+        "key_passes_per90": 1.58,
+        "assists_per90": 0.4,
+        "pass_accuracy_percentage": 86.18
+      },
+      {
+        "player_id": 37761346,
+        "player_name": "Justin Meltofte Janssen",
+        "appearances": 29,
+        "minutes_played": 1638,
+        "rating": 7.07,
+        "key_passes_per90": 1.54,
+        "assists_per90": 0.16,
+        "pass_accuracy_percentage": 89.36
+      }
+    ]
+  },
+  "293": {
+    "team": {
+      "team_id": 293,
+      "season_id": 25536,
+      "team_name": "Brøndby IF",
+      "rank": 5,
+      "matches": 32,
+      "wins": 13,
+      "draws": 6,
+      "losses": 13,
+      "goals_for": 44,
+      "goals_against": 35,
+      "goal_difference": 9,
+      "points": 45,
+      "average_possession": 51.84,
+      "corners": 127.0,
+      "yellowcards": 63.0,
+      "redcards": 4.0
+    },
+    "squad_size": 37,
+    "squad_average_rating": 6.86,
+    "top_scorers": [
+      {
+        "player_id": 37738599,
+        "player_name": "Jacob Brøchner Ambæk",
+        "appearances": 26,
+        "minutes_played": 1737,
+        "goals": 7,
+        "assists": 0,
+        "average_rating": 6.82
+      },
+      {
+        "player_id": 20694538,
+        "player_name": "Nicolai Vallys",
+        "appearances": 30,
+        "minutes_played": 2492,
+        "goals": 7,
+        "assists": 7,
+        "average_rating": 7.11
+      },
+      {
+        "player_id": 37445147,
+        "player_name": "Sho Fukuda",
+        "appearances": 23,
+        "minutes_played": 969,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 6.89
+      },
+      {
+        "player_id": 37522720,
+        "player_name": "Filip Bundgaard",
+        "appearances": 19,
+        "minutes_played": 1096,
+        "goals": 4,
+        "assists": 2,
+        "average_rating": 6.86
+      },
+      {
+        "player_id": 37624308,
+        "player_name": "Noah Teye Nartey",
+        "appearances": 17,
+        "minutes_played": 1154,
+        "goals": 4,
+        "assists": 3,
+        "average_rating": 7.16
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37720742,
+        "player_name": "Clement Bischoff",
+        "appearances": 7,
+        "minutes_played": 487,
+        "rating": 7.04,
+        "key_passes_per90": 3.14,
+        "assists_per90": 0.18,
+        "pass_accuracy_percentage": 83.74
+      },
+      {
+        "player_id": 37624308,
+        "player_name": "Noah Teye Nartey",
+        "appearances": 17,
+        "minutes_played": 1154,
+        "rating": 7.16,
+        "key_passes_per90": 2.81,
+        "assists_per90": 0.23,
+        "pass_accuracy_percentage": 89.46
+      },
+      {
+        "player_id": 19979663,
+        "player_name": "Mads Frøkjær-Jensen",
+        "appearances": 13,
+        "minutes_played": 746,
+        "rating": 6.75,
+        "key_passes_per90": 2.05,
+        "assists_per90": 0.24,
+        "pass_accuracy_percentage": 74.74
+      },
+      {
+        "player_id": 37526344,
+        "player_name": "Mayckel Lahdo",
+        "appearances": 9,
+        "minutes_played": 282,
+        "rating": 6.79,
+        "key_passes_per90": 1.91,
+        "assists_per90": 0.64,
+        "pass_accuracy_percentage": 86.75
+      },
+      {
+        "player_id": 42862,
+        "player_name": "Mats Köhlert",
+        "appearances": 21,
+        "minutes_played": 1583,
+        "rating": 7.03,
+        "key_passes_per90": 1.82,
+        "assists_per90": 0.11,
+        "pass_accuracy_percentage": 89.46
+      }
+    ]
+  },
+  "2447": {
+    "team": {
+      "team_id": 2447,
+      "season_id": 25536,
+      "team_name": "Viborg FF",
+      "rank": 6,
+      "matches": 32,
+      "wins": 13,
+      "draws": 5,
+      "losses": 14,
+      "goals_for": 49,
+      "goals_against": 51,
+      "goal_difference": -2,
+      "points": 44,
+      "average_possession": 47.56,
+      "corners": 147.0,
+      "yellowcards": 52.0,
+      "redcards": 0.0
+    },
+    "squad_size": 34,
+    "squad_average_rating": 6.76,
+    "top_scorers": [
+      {
+        "player_id": 37627140,
+        "player_name": "Charly Ngos Nouck Horneman",
+        "appearances": 29,
+        "minutes_played": 1628,
+        "goals": 6,
+        "assists": 3,
+        "average_rating": 6.88
+      },
+      {
+        "player_id": 37455152,
+        "player_name": "Mads Søndergaard Clausen",
+        "appearances": 23,
+        "minutes_played": 1512,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 6.88
+      },
+      {
+        "player_id": 15426471,
+        "player_name": "Tim Freriks",
+        "appearances": 23,
+        "minutes_played": 1201,
+        "goals": 4,
+        "assists": 1,
+        "average_rating": 6.65
+      },
+      {
+        "player_id": 37537631,
+        "player_name": "Srdan Kuzmic",
+        "appearances": 26,
+        "minutes_played": 2010,
+        "goals": 4,
+        "assists": 0,
+        "average_rating": 6.94
+      },
+      {
+        "player_id": 37656066,
+        "player_name": "Thomas Jørgensen",
+        "appearances": 31,
+        "minutes_played": 2590,
+        "goals": 4,
+        "assists": 8,
+        "average_rating": 7.35
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37656066,
+        "player_name": "Thomas Jørgensen",
+        "appearances": 31,
+        "minutes_played": 2590,
+        "rating": 7.35,
+        "key_passes_per90": 2.05,
+        "assists_per90": 0.28,
+        "pass_accuracy_percentage": 77.49
+      },
+      {
+        "player_id": 12433281,
+        "player_name": "Bilal Brahimi",
+        "appearances": 16,
+        "minutes_played": 782,
+        "rating": 6.82,
+        "key_passes_per90": 1.61,
+        "assists_per90": 0.12,
+        "pass_accuracy_percentage": 81.52
+      },
+      {
+        "player_id": 37627140,
+        "player_name": "Charly Ngos Nouck Horneman",
+        "appearances": 29,
+        "minutes_played": 1628,
+        "rating": 6.88,
+        "key_passes_per90": 1.44,
+        "assists_per90": 0.17,
+        "pass_accuracy_percentage": 69.73
+      },
+      {
+        "player_id": 11704884,
+        "player_name": "Jean-Manuel Mbom",
+        "appearances": 23,
+        "minutes_played": 1587,
+        "rating": 6.76,
+        "key_passes_per90": 1.36,
+        "assists_per90": 0.23,
+        "pass_accuracy_percentage": 80.94
+      },
+      {
+        "player_id": 37455152,
+        "player_name": "Mads Søndergaard Clausen",
+        "appearances": 23,
+        "minutes_played": 1512,
+        "rating": 6.88,
+        "key_passes_per90": 1.31,
+        "assists_per90": 0.06,
+        "pass_accuracy_percentage": 78.25
+      }
+    ]
+  },
+  "390": {
+    "team": {
+      "team_id": 390,
+      "season_id": 25536,
+      "team_name": "Sønderjyske Fodbold",
+      "rank": 7,
+      "matches": 32,
+      "wins": 12,
+      "draws": 8,
+      "losses": 12,
+      "goals_for": 44,
+      "goals_against": 49,
+      "goal_difference": -5,
+      "points": 44,
+      "average_possession": 43.94,
+      "corners": 129.0,
+      "yellowcards": 54.0,
+      "redcards": 2.0
+    },
+    "squad_size": 34,
+    "squad_average_rating": 6.7,
+    "top_scorers": [
+      {
+        "player_id": 1484883,
+        "player_name": "Kristall Máni Ingason",
+        "appearances": 14,
+        "minutes_played": 952,
+        "goals": 6,
+        "assists": 2,
+        "average_rating": 6.98
+      },
+      {
+        "player_id": 37266072,
+        "player_name": "Matthew Hoppe",
+        "appearances": 29,
+        "minutes_played": 1910,
+        "goals": 6,
+        "assists": 0,
+        "average_rating": 6.77
+      },
+      {
+        "player_id": 21036789,
+        "player_name": "Lirim Qamili",
+        "appearances": 25,
+        "minutes_played": 1257,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 6.68
+      },
+      {
+        "player_id": 37723662,
+        "player_name": "Olti Hyseni",
+        "appearances": 31,
+        "minutes_played": 1652,
+        "goals": 5,
+        "assists": 5,
+        "average_rating": 6.8
+      },
+      {
+        "player_id": 37761070,
+        "player_name": "Sidi Mohamed Cherif Haidara",
+        "appearances": 27,
+        "minutes_played": 1326,
+        "goals": 4,
+        "assists": 1,
+        "average_rating": 6.69
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37723662,
+        "player_name": "Olti Hyseni",
+        "appearances": 31,
+        "minutes_played": 1652,
+        "rating": 6.8,
+        "key_passes_per90": 1.58,
+        "assists_per90": 0.27,
+        "pass_accuracy_percentage": 69.96
+      },
+      {
+        "player_id": 37577669,
+        "player_name": "Alexander Lyng",
+        "appearances": 28,
+        "minutes_played": 1692,
+        "rating": 6.73,
+        "key_passes_per90": 1.49,
+        "assists_per90": 0.05,
+        "pass_accuracy_percentage": 74.49
+      },
+      {
+        "player_id": 37532287,
+        "player_name": "Mads Agger",
+        "appearances": 21,
+        "minutes_played": 1462,
+        "rating": 6.82,
+        "key_passes_per90": 1.48,
+        "assists_per90": 0.18,
+        "pass_accuracy_percentage": 70.86
+      },
+      {
+        "player_id": 1484883,
+        "player_name": "Kristall Máni Ingason",
+        "appearances": 14,
+        "minutes_played": 952,
+        "rating": 6.98,
+        "key_passes_per90": 1.32,
+        "assists_per90": 0.19,
+        "pass_accuracy_percentage": 84.58
+      },
+      {
+        "player_id": 37503567,
+        "player_name": "Tobias Sommer",
+        "appearances": 27,
+        "minutes_played": 2412,
+        "rating": 7.06,
+        "key_passes_per90": 1.12,
+        "assists_per90": 0.15,
+        "pass_accuracy_percentage": 79.36
+      }
+    ]
+  },
+  "1789": {
+    "team": {
+      "team_id": 1789,
+      "season_id": 25536,
+      "team_name": "Odense BK",
+      "rank": 8,
+      "matches": 32,
+      "wins": 11,
+      "draws": 8,
+      "losses": 13,
+      "goals_for": 51,
+      "goals_against": 60,
+      "goal_difference": -9,
+      "points": 41,
+      "average_possession": 51.41,
+      "corners": 174.0,
+      "yellowcards": 46.0,
+      "redcards": 3.0
+    },
+    "squad_size": 30,
+    "squad_average_rating": 6.72,
+    "top_scorers": [
+      {
+        "player_id": 27066734,
+        "player_name": "Noah Ganaus",
+        "appearances": 32,
+        "minutes_played": 2609,
+        "goals": 11,
+        "assists": 4,
+        "average_rating": 6.96
+      },
+      {
+        "player_id": 2538544,
+        "player_name": "Jann-Fiete Arp",
+        "appearances": 30,
+        "minutes_played": 2278,
+        "goals": 10,
+        "assists": 4,
+        "average_rating": 7.23
+      },
+      {
+        "player_id": 25679,
+        "player_name": "Jay-Roy Grot",
+        "appearances": 29,
+        "minutes_played": 2038,
+        "goals": 7,
+        "assists": 3,
+        "average_rating": 6.77
+      },
+      {
+        "player_id": 37581800,
+        "player_name": "Jona Niemiec",
+        "appearances": 25,
+        "minutes_played": 949,
+        "goals": 5,
+        "assists": 2,
+        "average_rating": 6.69
+      },
+      {
+        "player_id": 25792,
+        "player_name": "Leeroy Owusu",
+        "appearances": 32,
+        "minutes_played": 2681,
+        "goals": 4,
+        "assists": 1,
+        "average_rating": 6.89
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37723838,
+        "player_name": "William Christian Martin",
+        "appearances": 16,
+        "minutes_played": 284,
+        "rating": 6.69,
+        "key_passes_per90": 2.85,
+        "assists_per90": 0.63,
+        "pass_accuracy_percentage": 79.73
+      },
+      {
+        "player_id": 2538544,
+        "player_name": "Jann-Fiete Arp",
+        "appearances": 30,
+        "minutes_played": 2278,
+        "rating": 7.23,
+        "key_passes_per90": 2.17,
+        "assists_per90": 0.16,
+        "pass_accuracy_percentage": 73.03
+      },
+      {
+        "player_id": 9938953,
+        "player_name": "Anssi Suhonen",
+        "appearances": 11,
+        "minutes_played": 547,
+        "rating": 6.77,
+        "key_passes_per90": 1.65,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 85.32
+      },
+      {
+        "player_id": 83721,
+        "player_name": "Rasmus Falk Jensen",
+        "appearances": 29,
+        "minutes_played": 2547,
+        "rating": 7.02,
+        "key_passes_per90": 1.24,
+        "assists_per90": 0.14,
+        "pass_accuracy_percentage": 89.09
+      },
+      {
+        "player_id": 25792,
+        "player_name": "Leeroy Owusu",
+        "appearances": 32,
+        "minutes_played": 2681,
+        "rating": 6.89,
+        "key_passes_per90": 1.21,
+        "assists_per90": 0.03,
+        "pass_accuracy_percentage": 80.74
+      }
+    ]
+  },
+  "86": {
+    "team": {
+      "team_id": 86,
+      "season_id": 25536,
+      "team_name": "Silkeborg IF",
+      "rank": 9,
+      "matches": 32,
+      "wins": 10,
+      "draws": 6,
+      "losses": 16,
+      "goals_for": 41,
+      "goals_against": 67,
+      "goal_difference": -26,
+      "points": 36,
+      "average_possession": 48.81,
+      "corners": 138.0,
+      "yellowcards": 34.0,
+      "redcards": 1.0
+    },
+    "squad_size": 35,
+    "squad_average_rating": 6.74,
+    "top_scorers": [
+      {
+        "player_id": 37561087,
+        "player_name": "Tonni Adamsen",
+        "appearances": 31,
+        "minutes_played": 2607,
+        "goals": 14,
+        "assists": 7,
+        "average_rating": 7.27
+      },
+      {
+        "player_id": 5967839,
+        "player_name": "Callum McCowatt",
+        "appearances": 32,
+        "minutes_played": 2511,
+        "goals": 11,
+        "assists": 5,
+        "average_rating": 7.26
+      },
+      {
+        "player_id": 84260,
+        "player_name": "Jens Martin Gammelby",
+        "appearances": 32,
+        "minutes_played": 2880,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 6.66
+      },
+      {
+        "player_id": 21045799,
+        "player_name": "Younes Bakiz",
+        "appearances": 24,
+        "minutes_played": 1418,
+        "goals": 2,
+        "assists": 3,
+        "average_rating": 6.79
+      },
+      {
+        "player_id": 32796136,
+        "player_name": "Pedro Luís Machado Ganchas",
+        "appearances": 29,
+        "minutes_played": 2546,
+        "goals": 2,
+        "assists": 1,
+        "average_rating": 6.87
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37259998,
+        "player_name": "Sofus Berger Brix",
+        "appearances": 20,
+        "minutes_played": 713,
+        "rating": 6.59,
+        "key_passes_per90": 2.15,
+        "assists_per90": 0.25,
+        "pass_accuracy_percentage": 80.36
+      },
+      {
+        "player_id": 37561087,
+        "player_name": "Tonni Adamsen",
+        "appearances": 31,
+        "minutes_played": 2607,
+        "rating": 7.27,
+        "key_passes_per90": 2.04,
+        "assists_per90": 0.24,
+        "pass_accuracy_percentage": 77.88
+      },
+      {
+        "player_id": 37691688,
+        "player_name": "Oskar Boesen",
+        "appearances": 8,
+        "minutes_played": 274,
+        "rating": 6.47,
+        "key_passes_per90": 1.97,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 85.57
+      },
+      {
+        "player_id": 33576939,
+        "player_name": "Pelle Elkjær Mattsson",
+        "appearances": 6,
+        "minutes_played": 478,
+        "rating": 6.82,
+        "key_passes_per90": 1.88,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 88.52
+      },
+      {
+        "player_id": 31640133,
+        "player_name": "Rami Hajal",
+        "appearances": 22,
+        "minutes_played": 958,
+        "rating": 6.59,
+        "key_passes_per90": 1.69,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 80.45
+      }
+    ]
+  },
+  "2356": {
+    "team": {
+      "team_id": 2356,
+      "season_id": 25536,
+      "team_name": "Randers FC",
+      "rank": 10,
+      "matches": 32,
+      "wins": 9,
+      "draws": 8,
+      "losses": 15,
+      "goals_for": 33,
+      "goals_against": 47,
+      "goal_difference": -14,
+      "points": 35,
+      "average_possession": 48.44,
+      "corners": 171.0,
+      "yellowcards": 53.0,
+      "redcards": 1.0
+    },
+    "squad_size": 36,
+    "squad_average_rating": 6.75,
+    "top_scorers": [
+      {
+        "player_id": 37296655,
+        "player_name": "Elies Mahmoud",
+        "appearances": 32,
+        "minutes_played": 2301,
+        "goals": 5,
+        "assists": 4,
+        "average_rating": 7.12
+      },
+      {
+        "player_id": 37359803,
+        "player_name": "Mohamed Toure",
+        "appearances": 17,
+        "minutes_played": 1139,
+        "goals": 4,
+        "assists": 3,
+        "average_rating": 6.92
+      },
+      {
+        "player_id": 83716,
+        "player_name": "Daniel Høegh",
+        "appearances": 30,
+        "minutes_played": 2614,
+        "goals": 4,
+        "assists": 0,
+        "average_rating": 7.08
+      },
+      {
+        "player_id": 37296587,
+        "player_name": "Florian Danho",
+        "appearances": 8,
+        "minutes_played": 369,
+        "goals": 2,
+        "assists": 0,
+        "average_rating": 6.77
+      },
+      {
+        "player_id": 37920305,
+        "player_name": "Cyril Edudzi",
+        "appearances": 8,
+        "minutes_played": 431,
+        "goals": 2,
+        "assists": 0,
+        "average_rating": 6.68
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 84286,
+        "player_name": "Mathias Greve",
+        "appearances": 29,
+        "minutes_played": 2493,
+        "rating": 7.08,
+        "key_passes_per90": 2.27,
+        "assists_per90": 0.14,
+        "pass_accuracy_percentage": 81.43
+      },
+      {
+        "player_id": 37296655,
+        "player_name": "Elies Mahmoud",
+        "appearances": 32,
+        "minutes_played": 2301,
+        "rating": 7.12,
+        "key_passes_per90": 2.03,
+        "assists_per90": 0.16,
+        "pass_accuracy_percentage": 79.92
+      },
+      {
+        "player_id": 37694399,
+        "player_name": "Mike Themsen",
+        "appearances": 29,
+        "minutes_played": 1547,
+        "rating": 6.64,
+        "key_passes_per90": 1.75,
+        "assists_per90": 0.17,
+        "pass_accuracy_percentage": 78.19
+      },
+      {
+        "player_id": 84626,
+        "player_name": "Frederik Lauenborg",
+        "appearances": 22,
+        "minutes_played": 567,
+        "rating": 6.69,
+        "key_passes_per90": 1.59,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 80.14
+      },
+      {
+        "player_id": 37515560,
+        "player_name": "Martin André Sjølstad",
+        "appearances": 12,
+        "minutes_played": 404,
+        "rating": 6.45,
+        "key_passes_per90": 1.56,
+        "assists_per90": 0,
+        "pass_accuracy_percentage": 78.01
+      }
+    ]
+  },
+  "2933": {
+    "team": {
+      "team_id": 2933,
+      "season_id": 25536,
+      "team_name": "Fredericia",
+      "rank": 11,
+      "matches": 32,
+      "wins": 9,
+      "draws": 7,
+      "losses": 16,
+      "goals_for": 45,
+      "goals_against": 68,
+      "goal_difference": -23,
+      "points": 34,
+      "average_possession": 44.13,
+      "corners": 153.0,
+      "yellowcards": 45.0,
+      "redcards": 1.0
+    },
+    "squad_size": 32,
+    "squad_average_rating": 6.73,
+    "top_scorers": [
+      {
+        "player_id": 37723164,
+        "player_name": "Sofus Østergaard Grandjean Johannesen",
+        "appearances": 22,
+        "minutes_played": 1274,
+        "goals": 6,
+        "assists": 2,
+        "average_rating": 6.89
+      },
+      {
+        "player_id": 85943,
+        "player_name": "Oscar Buch",
+        "appearances": 22,
+        "minutes_played": 1358,
+        "goals": 6,
+        "assists": 1,
+        "average_rating": 6.82
+      },
+      {
+        "player_id": 37597520,
+        "player_name": "Jonatan Holm Lindekilde",
+        "appearances": 17,
+        "minutes_played": 985,
+        "goals": 5,
+        "assists": 2,
+        "average_rating": 6.88
+      },
+      {
+        "player_id": 37614523,
+        "player_name": "Friday Ubi Etim",
+        "appearances": 14,
+        "minutes_played": 1228,
+        "goals": 5,
+        "assists": 1,
+        "average_rating": 7.07
+      },
+      {
+        "player_id": 86013,
+        "player_name": "Agon Mucolli",
+        "appearances": 16,
+        "minutes_played": 687,
+        "goals": 4,
+        "assists": 1,
+        "average_rating": 6.93
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 3857281,
+        "player_name": "Emilio Simonsen",
+        "appearances": 20,
+        "minutes_played": 1253,
+        "rating": 6.75,
+        "key_passes_per90": 2.15,
+        "assists_per90": 0.29,
+        "pass_accuracy_percentage": 82.89
+      },
+      {
+        "player_id": 86013,
+        "player_name": "Agon Mucolli",
+        "appearances": 16,
+        "minutes_played": 687,
+        "rating": 6.93,
+        "key_passes_per90": 1.7,
+        "assists_per90": 0.13,
+        "pass_accuracy_percentage": 76.65
+      },
+      {
+        "player_id": 37614523,
+        "player_name": "Friday Ubi Etim",
+        "appearances": 14,
+        "minutes_played": 1228,
+        "rating": 7.07,
+        "key_passes_per90": 1.61,
+        "assists_per90": 0.07,
+        "pass_accuracy_percentage": 68.39
+      },
+      {
+        "player_id": 37550754,
+        "player_name": "W. Madsen",
+        "appearances": 20,
+        "minutes_played": 963,
+        "rating": 6.68,
+        "key_passes_per90": 1.31,
+        "assists_per90": 0.09,
+        "pass_accuracy_percentage": 83.76
+      },
+      {
+        "player_id": 37586328,
+        "player_name": "Daníel Freyr Kristjánsson",
+        "appearances": 16,
+        "minutes_played": 998,
+        "rating": 6.77,
+        "key_passes_per90": 1.26,
+        "assists_per90": 0.27,
+        "pass_accuracy_percentage": 85.48
+      }
+    ]
+  },
+  "7466": {
+    "team": {
+      "team_id": 7466,
+      "season_id": 25536,
+      "team_name": "Vejle Boldklub",
+      "rank": 12,
+      "matches": 32,
+      "wins": 5,
+      "draws": 9,
+      "losses": 18,
+      "goals_for": 36,
+      "goals_against": 60,
+      "goal_difference": -24,
+      "points": 24,
+      "average_possession": 44.63,
+      "corners": 130.0,
+      "yellowcards": 62.0,
+      "redcards": 4.0
+    },
+    "squad_size": 38,
+    "squad_average_rating": 6.66,
+    "top_scorers": [
+      {
+        "player_id": 84470,
+        "player_name": "Mikkel Duelund",
+        "appearances": 25,
+        "minutes_played": 1564,
+        "goals": 8,
+        "assists": 1,
+        "average_rating": 6.97
+      },
+      {
+        "player_id": 37600887,
+        "player_name": "Christian Gammelgaard",
+        "appearances": 32,
+        "minutes_played": 2351,
+        "goals": 8,
+        "assists": 5,
+        "average_rating": 6.83
+      },
+      {
+        "player_id": 70186,
+        "player_name": "Stefan Ivov Velkov",
+        "appearances": 20,
+        "minutes_played": 1799,
+        "goals": 4,
+        "assists": 0,
+        "average_rating": 6.82
+      },
+      {
+        "player_id": 37580681,
+        "player_name": "Tobias Bach",
+        "appearances": 20,
+        "minutes_played": 1548,
+        "goals": 3,
+        "assists": 3,
+        "average_rating": 6.73
+      },
+      {
+        "player_id": 83083,
+        "player_name": "Anders K. Jacobsen",
+        "appearances": 8,
+        "minutes_played": 369,
+        "goals": 2,
+        "assists": 1,
+        "average_rating": 6.59
+      }
+    ],
+    "key_playmakers": [
+      {
+        "player_id": 37954702,
+        "player_name": "Bismark Edjeodji",
+        "appearances": 24,
+        "minutes_played": 876,
+        "rating": 6.49,
+        "key_passes_per90": 1.64,
+        "assists_per90": 0.31,
+        "pass_accuracy_percentage": 77.65
+      },
+      {
+        "player_id": 84059,
+        "player_name": "Andrew Hjulsager",
+        "appearances": 24,
+        "minutes_played": 1585,
+        "rating": 6.8,
+        "key_passes_per90": 1.36,
+        "assists_per90": 0.23,
+        "pass_accuracy_percentage": 74.38
+      },
+      {
+        "player_id": 37698715,
+        "player_name": "Lasse Flø Borregaard",
+        "appearances": 28,
+        "minutes_played": 1730,
+        "rating": 6.74,
+        "key_passes_per90": 1.3,
+        "assists_per90": 0.1,
+        "pass_accuracy_percentage": 76.29
+      },
+      {
+        "player_id": 37600887,
+        "player_name": "Christian Gammelgaard",
+        "appearances": 32,
+        "minutes_played": 2351,
+        "rating": 6.83,
+        "key_passes_per90": 1.23,
+        "assists_per90": 0.19,
+        "pass_accuracy_percentage": 76.12
+      },
+      {
+        "player_id": 83083,
+        "player_name": "Anders K. Jacobsen",
+        "appearances": 8,
+        "minutes_played": 369,
+        "rating": 6.59,
+        "key_passes_per90": 1.22,
+        "assists_per90": 0.24,
+        "pass_accuracy_percentage": 72.41
+      }
+    ]
+  }
+}
